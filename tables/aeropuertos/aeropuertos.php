@@ -20,7 +20,7 @@ $listaAero = find_all('aeropuertos');
           <button type="submit" class="btn btn-sm btn-icon btn-info" name="addButton" data-bs-toggle="modal" data-bs-target="#newBasicModal">
             <span class="tf-icons bx bx-list-plus"></span>
           </button>
-          
+
         </div>
         <?php include('modal_nuevoAero.php'); ?>
       </div>
@@ -44,11 +44,11 @@ $listaAero = find_all('aeropuertos');
                 <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong><?php echo $aeropuerto['aeropuerto']; ?></strong></td>
                 <td><?php echo $aeropuerto['codigo']; ?></td>
                 <td><?php echo $aeropuerto['creado']; ?></td>
-                <td><?php echo isset($aeropuerto['modificado'])?$aeropuerto['modificado']:"N/D";?></td>
+                <td><?php echo isset($aeropuerto['modificado']) ? $aeropuerto['modificado'] : "N/D"; ?></td>
                 <td><?php $usuarioc = find_by_id('usuarios', $aeropuerto['usuarioc']);
                     echo $usuarioc['usuario'] ?></td>
                 <td><?php $usuariom = find_by_id('usuarios', $aeropuerto['usuariom']);
-                    echo isset($usuariom['usuario'])?$usuariom['usuario']:"N/D";?></td>
+                    echo isset($usuariom['usuario']) ? $usuariom['usuario'] : "N/D"; ?></td>
                 <td class="text-center">
                   <form action="?page=sql_aeropuertos" method="post">
                     <input type="hidden" name="idAero" value="<?php echo $aeropuerto['id'] ?>" />
@@ -68,7 +68,7 @@ $listaAero = find_all('aeropuertos');
                     <span class="tf-icons bx bxs-edit-alt"></span>
                   </button>
                   <!-- Modal -->
-                  
+
                 </td>
                 <?php include('modal_editarAero.php') ?>
               </tr>
@@ -78,3 +78,5 @@ $listaAero = find_all('aeropuertos');
       </div>
     </div>
     <!--/ Striped Rows -->
+  </div>
+</div>

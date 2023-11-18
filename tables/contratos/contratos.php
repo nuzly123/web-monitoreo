@@ -74,3 +74,5 @@ $listaContrato = find_all('contratos');
             </div>
         </div>
         <!--/ Striped Rows -->
+    </div>
+</div>

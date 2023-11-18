@@ -76,3 +76,5 @@ $listaciudades = find_all('ciudades');
       </div>
     </div>
     <!--/ Striped Rows -->
+    </div>
+</div>

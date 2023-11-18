@@ -75,3 +75,5 @@ $listaestaciones = find_all('estaciones');
             </div>
         </div>
         <!--/ Striped Rows -->
+    </div>
+</div>

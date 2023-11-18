@@ -31,6 +31,9 @@
         case "sql_aeropuertos":
             include 'tables/aeropuertos/sql_aeropuertos.php';
             break;
+        case "nuevo_empleado":
+            include 'forms/empleados/nuevo_empleado.php';
+            break;
     }
 }
 ?>

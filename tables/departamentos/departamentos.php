@@ -75,3 +75,5 @@ $listadep = find_all('departamentos');
             </div>
         </div>
         <!--/ Striped Rows -->
+    </div>
+</div>
