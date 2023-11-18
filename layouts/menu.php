@@ -206,7 +206,7 @@
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="ui-alerts.html" class="menu-link">
+                    <a href="?page=nuevo_empleado" class="menu-link">
                         <div data-i18n="Alerts">Nuevo</div>
                     </a>
                 </li>
