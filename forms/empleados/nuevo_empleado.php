@@ -21,7 +21,6 @@ require_once("includes/load.php");
                   <img src="assets/img/avatars/1.png" alt="user-avatar" class="d-block rounded" height="200" width="200" id="uploadedAvatar" />
                 </div>
                 <div class="button-wrapper row" align="center">
-
                   <div class="col-sm-12 col-md-6">
                     <label for="upload" class="btn btn-primary " tabindex="0">
                       <span class="d-none d-sm-block">Subir</span>
@@ -35,7 +34,7 @@ require_once("includes/load.php");
                       <span class="d-none d-sm-block">Reset</span>
                     </button>
                   </div>
-                  <p class="text-muted mb-0">Allowed JPG, GIF or PNG. Max size of 800K</p>
+                  <p class="text-muted mb-0">Archivos JPG y PNG. Tamaño Max. de 800K</p>
                 </div>
               </div>
             </div>
