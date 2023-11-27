@@ -31,8 +31,17 @@
         case "sql_aeropuertos":
             include 'tables/aeropuertos/sql_aeropuertos.php';
             break;
+        case "cargos":
+            include 'tables/cargos/cargos.php';
+            break;
+        case "sql_cargos":
+            include 'tables/cargos/sql_cargos.php';
+            break;
         case "nuevo_empleado":
             include 'forms/empleados/nuevo_empleado.php';
+            break;
+        case "sql_empleados":
+            include 'forms/empleados/sql_empleados.php';
             break;
     }
 }

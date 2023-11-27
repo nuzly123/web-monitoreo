@@ -1022,11 +1022,11 @@ function  monthlySales($year){
 function llena_select($tabla, $nombreselect, $campo, $seleccionado=0, $orderby='id', $enabled='true', $required='true'){
   $registros = find_all_v2($tabla, $orderby);
 ?>
-  <select class="form-control custom-select" name="<?php echo $nombreselect ?>" id="<?php echo $nombreselect; ?>" 
+  <select class="form-select" name="<?php echo $nombreselect ?>" id="<?php echo $nombreselect; ?>" 
     <?php if ($required == 'true') { echo 'required'; } ?>
     <?php if ($enabled == 'false') { echo 'disabled'; } ?>
-    style="height: 31px; padding-top: 4px; padding-bottom: 4px;">
-    <option value="">Seleccionar...</option>
+    >
+    <option value="">(Seleccione)</option>
     <?php foreach ($registros as $registro): ?>
       <option value="<?php echo $registro['id']; ?>" <?php if($registro['id']==$seleccionado){echo "selected";}?>><?php echo $registro[$campo]; ?></option>
     <?php endforeach; ?>

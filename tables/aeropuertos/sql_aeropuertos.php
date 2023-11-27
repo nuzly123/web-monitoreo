@@ -30,3 +30,4 @@ if (isset($_POST['nuevoAero'])) {
   $session->msg("s", "El registro se ha añadido exitosamente.");
   echo "<script>window.location='?page=aeropuertos';</script>";
 }
+?>

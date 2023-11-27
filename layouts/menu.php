@@ -136,13 +136,13 @@
             </a>
             <ul class="menu-sub">
                 <li class="menu-item">
-                    <a href="html/ui-accordion.html" class="menu-link">
-                        <div data-i18n="Accordion">Buscar Empleado</div>
+                    <a href="?page=nuevo_empleado" class="menu-link">
+                        <div data-i18n="Accordion">Nuevo</div>
                     </a>
                 </li>
                 <li class="menu-item">
                     <a href="ui-alerts.html" class="menu-link">
-                        <div data-i18n="Alerts">Nuevo</div>
+                        <div data-i18n="Alerts">Buscar Empleado</div>
                     </a>
                 </li>
                 <li class="menu-item">
@@ -153,6 +153,11 @@
                         <li class="menu-item">
                             <a href="?page=contratos" class="menu-link">
                                 <div data-i18n="Text Divider"><strong>  Contratos</strong></div>
+                            </a>
+                        </Li>
+                        <li class="menu-item">
+                            <a href="?page=cargos" class="menu-link">
+                                <div data-i18n="Text Divider"><strong>  Cargos</strong></div>
                             </a>
                         </Li>
                     </ul>
@@ -206,7 +211,7 @@
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="?page=nuevo_empleado" class="menu-link">
+                    <a href="" class="menu-link">
                         <div data-i18n="Alerts">Nuevo</div>
                     </a>
                 </li>

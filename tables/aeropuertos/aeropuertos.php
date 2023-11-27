@@ -7,24 +7,25 @@ $listaAero = find_all('aeropuertos');
   <!-- Content -->
 
   <div class="container-xxl flex-grow-1 container-p-y">
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Configuración /</span> Aeropuertos</h4>
+    <h5 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Configuración /</span> Aeropuertos</h4>
 
     <?php echo display_mssg($msg) ?>
     <!-- Striped Rows -->
     <div class="card">
-      <div class="row">
-        <div class="col-md-11">
-          <h5 class="card-header">Aeropuertos</h5>
-        </div>
-        <div class="col-md-1 mr-5 mt-4" align="center">
-          <button type="submit" class="btn btn-sm btn-icon btn-info" name="addButton" data-bs-toggle="modal" data-bs-target="#newBasicModal">
-            <span class="tf-icons bx bx-list-plus"></span>
-          </button>
+      <div class="card-header">
+        <div class="row">
+          <div class="col-md-11">
+            <h5 class="card-header">Aeropuertos</h5>
+          </div>
+          <div class="col-md-1 mr-5 mt-4" align="center">
+            <button type="submit" class="btn btn-sm btn-icon btn-info" name="addButton" data-bs-toggle="modal" data-bs-target="#newBasicModal">
+              <span class="tf-icons bx bx-list-plus"></span>
+            </button>
 
+          </div>
+          <?php include('modal_nuevoAero.php'); ?>
         </div>
-        <?php include('modal_nuevoAero.php'); ?>
-      </div>
-      <div class="table-responsive text-nowrap">
+        <div class="table-responsive">
         <table class="table table-striped">
           <thead>
             <tr>
@@ -75,6 +76,7 @@ $listaAero = find_all('aeropuertos');
             <?php endforeach; ?>
           </tbody>
         </table>
+      </div>
       </div>
     </div>
     <!--/ Striped Rows -->
